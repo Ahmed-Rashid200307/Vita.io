@@ -1,0 +1,60 @@
+/* TEMPLATE SECTION */
+.templates-section {
+  /* background-image: url("vector-may-2021-100.jpg"); */
+  padding-top: 3vh;
+  /* background-color: antiquewhite; */
+}
+
+.sample-resume-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10vh 3vw;
+  column-gap: 3vw;
+  row-gap: 3vh;
+  justify-content: center;
+}
+
+.single-resume-container {
+  position: relative;
+  border: solid;
+  border-width: 1px;
+}
+
+.sample-resume{
+  height: 150px;
+  min-height: 28vw;
+  /* filter: blur(2px);s */
+}
+
+
+.customize-button {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  font-size: 1vi;
+  font-weight: 600;
+  padding: 1.5vh 15%;
+  color: white;
+  background-color: rgb(26,145,240);
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  border-right: 1px;
+  border-radius: 4px 0 0 4px;
+}
+
+.customize-button:hover{
+  filter: none;
+  background-color: rgb(20, 134, 228);
+}
+
+.customize-button:active {
+  background-color: rgb(19, 121, 204);
+}
+
+.template-title {
+  font-size: 25px;
+  font-weight: 700;
+  /* margin-top: 3vh; */
+  text-align: center;
+}
