@@ -2,6 +2,8 @@
 .getting-started-section {
   display: flex;
   flex-wrap: wrap;
+  height: 90vh;
+  overflow: hidden;
   position: relative;
   user-select: none;
 }
@@ -13,6 +15,8 @@
 
 .blurred-contents-container {
   flex: 1;
+  height: 100%;
+  overflow: scroll;
   min-width: 327px;
   background-color: rgb(247,249,252);
   filter: blur(5px);
@@ -20,6 +24,10 @@
   padding-bottom: 10vh;
   pointer-events: none;
   transition: all 0.5s ease;
+}
+
+.blurred-contents-container::-webkit-scrollbar {
+  display: none;
 }
 
 .getting-started-section p {
