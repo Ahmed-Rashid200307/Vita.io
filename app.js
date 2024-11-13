@@ -10,25 +10,21 @@ overlayButton.addEventListener("click", () => {
     overlayButton.remove();
     personalDetailsContainer.style.filter = "none";
     personalDetailsContainer.style.pointerEvents = 'auto'; 
-    resumePreview.style.flex = "1.5";
+    resumePreview.style.flex = "1";
     
   })
 
 addMoreButton.addEventListener('click', () => {
   if(detailsAdded) {
-    // dropDownItems.style.display = "none";
-    dropDownItems.style.marginTop = "0";
-    dropDownItems.style.maxHeight = "0";
-    addMoreButton.innerHTML = "Hide additional details &#9660;"
+    resumeInputsAll.style.height = "62%";
+    addMoreButton.innerHTML = "Add more details &#9660;"
   }
   else {
-    // dropDownItems.style.display = "flex";
-    dropDownItems.style.marginTop = "5.5vh";
-    dropDownItems.style.maxHeight = "38vh";
+    resumeInputsAll.style.height = `${resumeInputsAll.scrollHeight}px`;
     addMoreButton.innerHTML = "Hide additional details &#9650;"
   }
 
-  detailsAdded = detailsAdded? false : true;
+  detailsAdded = !detailsAdded;
 });
 
 function addDetails () {
