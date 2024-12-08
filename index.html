@@ -92,8 +92,8 @@
             <input class="input-field" type="text" id="dob">
           </div>
         </div>
-        <button class="add-button">Add more details &#9660;</button>
-
+        <button class="add-button js-add-more-details">Add more details &#9660;</button>
+        <hr>
         <div class="resume-history">
           <!-- SUMMARY -->
           <label class="title" id="summary">Professional Summary</label>
@@ -104,11 +104,14 @@
           <p class="input-tip">List each role with the job title, company, dates, and 2-3 bullet points highlighting key achievements or responsibilities that show measurable impact.</p>
 
           <div class="employment-history-container">
-            <div class="single-history-container">
-              <label class="container-name">Not Specified</label>
+            <div class="single-history-container js-history-container-0">
+              <div class="container-name">
+                <label class="container-name-label js-label-0">(Not Specified)</label>
+                <button class="js-collapse-button" data-id="container-0">&#x23F6;</button>
+              </div>
               <div class="history-input-container">
                 <label class="label" id="previous-job-title">Job title</label>
-                <input class="input-field" id="previous-job-title">
+                <input class="input-field js-title-name" id="previous-job-title" data-label="label-0" maxlength="25">
               </div>
               <div class="history-input-container">
                 <label class="label" id="employer">Employer</label>
@@ -127,8 +130,89 @@
               </div>
             </div>
           </div>
+
+          <button class="add-button js-add-more-employement" data-container-name="employment-container"><strong>+</strong> Add Employement</button>
+
+          <label class="title">Education</label>
+          <p class="input-tip">Start with the most recent degree or qualification (e.g., Bachelor's, Master's, Diploma).</p>
+
+          <div class="education-history-container">
+            <div class="single-history-container js-history-container-1">
+              <div class="container-name">
+                <label class="container-name-label js-label-1">(Not Specified)</label>
+                <button class="js-collapse-button" data-id="container-1">&#x23F6;</button>
+              </div>
+              <div class="history-input-container">
+                <label class="label" id="previous-job-title">Institute</label>
+                <input class="input-field js-title-name" id="previous-job-title" data-label="label-1" maxlength="25">
+              </div>
+              <div class="history-input-container">
+                <label class="label" id="employer">Degree</label>
+                <input class="input-field" id="employer">
+              </div>
+              <div class="history-input-container">
+                <label class="label" id="start-date">Start Date / End Date</label>
+                <input class="input-field date-input" type="date" id="start-date">
+                <input class="input-field date-input" type="date" id="end-date">
+              </div>
+              <div class="history-input-container">
+                <label class="label" id="end-date">City</label>
+                <input class="input-field" type="text">
+              </div>
+              <div class="history-summary-container">
+                <textarea class="job-history-summary" type="text" placeholder="Experienced and dedicated professional with a background in computer ..." maxlength="600"></textarea>
+              </div>
+            </div>
+          </div>
+          <button class="add-button js-add-more-employement" data-container-name="education-container"><strong>+</strong> Add Education</button>
+
+          <label class="title">Social Links</label>
+          <p class="input-tip">Professsional social links like LinkedIn etc.</p>
+
+          <div class="social-container">
+            <div class="single-history-container js-history-container-2">
+              <div class="container-name">
+                <label class="container-name-label js-label-2">(Not Specified)</label>
+              </div>
+              <div class="history-input-container">
+                <label class="label" id="previous-job-title">Label</label>
+                <input class="input-field js-title-name" id="previous-job-title" data-label="label-2" maxlength="25">
+              </div>
+              <div class="history-input-container">
+                <label class="label" id="employer">Link</label>
+                <input class="input-field" id="employer">
+              </div>
+            </div>
+          </div>
+          <button class="add-button js-add-more-employement" data-container-name="social-container"><strong>+</strong> Add Socials</button>
+
+          <label class="title">Add skills</label>
+          <p class="input-tip">Review the job description and include skills that align with the role.</p>
+
+          <div class="social-container">
+            <div class="single-history-container js-history-container-2">
+              <div class="container-name">
+                <label class="container-name-label js-label-2">(Not Specified)</label>
+              </div>
+              <div class="history-input-container">
+                <label class="label" id="previous-job-title">Skill</label>
+                <input class="input-field js-title-name" id="previous-job-title" data-label="label-2" maxlength="25">
+              </div>
+              <div>
+                <label class="label" id="employer">Level</label>
+              <div class="slider-container">
+                <input data-color="rgb(254,125,139)" data-bg-color="rgb(255,234,236)" class="slider" type="radio" name="skill-selector" value="red">
+                <input data-color="rgb(246,133,89)" data-bg-color="rgb(254,235,227)" class="slider" type="radio" name="skill-selector" value="orange">
+                <input data-color="rgb(236,147,12)" data-bg-color="rgb(255,242,204)" class="slider" type="radio" name="skill-selector" value="l-orange">
+                <input data-color="rgb(72,186,117)" data-bg-color="rgb(231,244,237)" class="slider" type="radio" name="skill-selector" value="green">
+                <input data-color="rgb(155,161,251)" data-bg-color="rgb(241,242,255)" class="slider" type="radio" name="skill-selector" value="purple">
+              </div>
+            </div>
+            </div>
+          </div>
+          <button class="add-button js-add-more-employement" data-container-name="social-container"><strong>+</strong> Add Skills</button>
         </div>
-        <button class="add-button"><strong>+</strong> Add employemnt</button>
+        <p>dsdasda</p>
       </div>
       
       <div class="resume-preview">

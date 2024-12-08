@@ -10,7 +10,8 @@ body::-webkit-scrollbar {
 
 hr {
   justify-self: center;
-  width: 80%;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .header-container {
