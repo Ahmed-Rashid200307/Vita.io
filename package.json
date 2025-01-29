@@ -4,7 +4,7 @@
   "description": "��#\u0000 \u0000V\u0000i\u0000t\u0000a\u0000.\u0000i\u0000o\u0000\r\u0000 \u0000",
   "main": "server.js",
   "scripts": {
-    "start": "node resumefetch.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
