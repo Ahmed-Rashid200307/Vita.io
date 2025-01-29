@@ -22,10 +22,10 @@ app.get('/generate-resume', (req,res)=> {
   })
 })
 
-app.get('/message', (req,res)=> {
+app.get('/', (req,res)=> {
   console.log("req rec");
   
-  res.end("hello");
+  res.sendFile('C:/Users/as comp/Desktop/Resume project/resume.html');
 })
 
 app.listen(3000, () => console.log('Server is running on port 3000'));
