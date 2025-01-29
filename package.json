@@ -1,0 +1,29 @@
+{
+  "name": "resume-project",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000V\u0000i\u0000t\u0000a\u0000.\u0000i\u0000o\u0000\r\u0000 \u0000",
+  "main": "app.js",
+  "scripts": {
+    "start": "node resumefetch.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahmed-Rashid200307/Vita.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ahmed-Rashid200307/Vita.io/issues"
+  },
+  "homepage": "https://github.com/Ahmed-Rashid200307/Vita.io#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "jsonresume-theme-elegant": "^1.16.1",
+    "jsonresume-theme-flat": "^0.3.7",
+    "jsonresume-theme-kendall": "^0.2.0",
+    "jsonresume-theme-macchiato": "^1.1.0",
+    "jsonresume-theme-relaxed": "^0.1.11",
+    "jsonresume-theme-rickosborne": "^2022.9.16-T1450",
+    "jsonresume-theme-stackoverflow": "^2.1.0"
+  }
+}
