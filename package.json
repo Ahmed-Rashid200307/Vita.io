@@ -22,6 +22,8 @@
     "jsonresume-theme-flat": "^0.3.7",
     "jsonresume-theme-kendall": "^0.2.0",
     "jsonresume-theme-macchiato": "^1.1.0",
+    "jsonresume-theme-onepage": "^0.0.3",
+    "jsonresume-theme-paper": "^0.5.0",
     "jsonresume-theme-relaxed": "^0.1.11",
     "jsonresume-theme-rickosborne": "^2022.9.16-T1450",
     "jsonresume-theme-stackoverflow": "^2.1.0"

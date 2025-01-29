@@ -13,12 +13,12 @@ app.post('/generate-resume', (req,res)=> {
 
   file.writeFileSync('resume.json',JSON.stringify(resumeData,null,2));
 
-  exec(`resume export resume.pdf --theme ${req.query.theme}`, (error)=>{
+  exec(`resume serve --theme ${req.query.theme}`, (error)=>{
     if(error){
       return res.status(500).send('Error generating resume');
     }
 
-  res.sendFile('C:/Users/as comp/Desktop/Resume project/resume.pdf');
+  // res.sendFile('C:/Users/as comp/Desktop/Resume project/resume.pdf');
   })
 })
 
